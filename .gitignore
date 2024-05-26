@@ -1,0 +1,11 @@
+.env
+.lightning_studio
+.dotnet
+.bash_history
+.idea/
+.viminfo
+.vscode-server/
+.vscode/
+.wget-hsts
+__pycache__/
+bird/
