@@ -34,7 +34,7 @@ for file_path in py_files_list:
 print("Code parsed successfully.")
 
 # Extract function and class names from the code chunks and combines the code into a single string into a new list
-text_chunks = []
+text_chunks: list = []
 for chunk in code_chunks:
     file_name = chunk[0]
     function_name = chunk[3].split("(")[0]
@@ -51,8 +51,9 @@ for chunk in code_chunks:
 # Add text to the index
 try:
     for text in text_chunks:
+        print(text)
         faiss_manager.add_text([text])
-    print("Texts added to the index.")
+    #print("Texts added to the index.")
 except AssertionError as e:
     print(f"Error adding texts: {e}")
 # Search for a query text in the index
