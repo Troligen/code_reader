@@ -8,4 +8,5 @@
 .vscode/
 .wget-hsts
 __pycache__/
+venv/
 bird/
